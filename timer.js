@@ -1,3 +1,17 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const splashScreen = document.getElementById('splash-screen');
+    const contentWrapper = document.querySelector('.content-wrapper');
+
+    // No need for setTimeout here, as we're using CSS animations
+
+    splashScreen.addEventListener('animationend', (e) => {
+        if (e.animationName === 'jumpUp') {
+            splashScreen.style.display = 'none';
+            contentWrapper.style.opacity = '1';
+        }
+    });
+});
+
 let workTime = 25 * 60; // 25 minutes in seconds
 let breakTime = 10 * 60; // 5 minutes in seconds
 let fadeDuration = 3; // Fade duration in seconds
