@@ -1,5 +1,7 @@
 # pomostrike-timer
 
+Pomostrike Timer is a Pomodoro timer (25 min blocks) with alarms that play the tunes from the Tokyo and Tohuku Station Chimes used in Japan. It sets a more calm and peaceful setting to transition from work to break (and vice-versa).
+
 ## This is a pomodoro timer that I created for myself and wanted to share to my fellow pomodoro enthusiasts
 
 I didn't find a niche pomodoro timer that had the chimes from the Japanese stations. So i created one on my own!
