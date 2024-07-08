@@ -1,5 +1,5 @@
-let workTime = 10; // 25 minutes in seconds
-let breakTime = 15; // 5 minutes in seconds
+let workTime = 25 * 60; // 25 minutes in seconds
+let breakTime = 10 * 60; // 5 minutes in seconds
 let fadeDuration = 3; // Fade duration in seconds
 let isRunning = false;
 let isWorkSession = true;
