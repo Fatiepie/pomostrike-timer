@@ -1,21 +1,31 @@
 body {
     font-family: 'Sawarabi Mincho', sans-serif;
-    color: #333; /* Dark text */
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full height of viewport */
+    height: 100vh;
     margin: 0;
-    background-image: url('spinning-tomato-tomato.gif'); /* Path to your GIF */
-    background-size: cover; /* Cover the entire background */
-    background-repeat: no-repeat; /* Prevent background from repeating */
+    background-color: #000; /* Black background */
+    position: relative; /* For proper positioning of children */
 }
 
+.background-gif {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+
 .container {
-    text-align: center; /* Center align text */
-    background-color: rgba(255, 255, 255, 0.7); /* Light background with transparency */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
-    border-radius: 10px; /* Rounded corners for container */
+    border-radius: 10px;
+    position: relative;
+    z-index: 2; /* Ensure it's above the background */
 }
 
 #sessionTitle {
