@@ -1,0 +1,61 @@
+body {
+    font-family: 'Sawarabi Mincho', sans-serif;
+    color: #333; /* Dark text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of viewport */
+    margin: 0;
+    background-image: url('spinning-tomato-tomato.gif'); /* Path to your GIF */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+}
+
+.container {
+    text-align: center; /* Center align text */
+    background-color: rgba(255, 255, 255, 0.7); /* Light background with transparency */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for container */
+}
+
+#sessionTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#timer {
+    font-size: 48px;
+    margin-top: 20px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button-container button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 10px; /* Add margin for spacing between buttons */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button#startButton {
+    background-color: #007bff; /* Blue for work session */
+    color: #fff; /* White text */
+}
+
+.button-container button#resetButton {
+    background-color: #dc3545; /* Red for reset button */
+    color: #fff; /* White text */
+}
+
+.button-container button#startButton.break-session {
+    background-color: #28a745; /* Green for break session */
+}
+
+.button-container button#resetButton.break-session {
+    background-color: #dc3545; /* Red for reset button */
+}
