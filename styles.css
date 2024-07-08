@@ -6,6 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+<<<<<<< HEAD
     background-color: #000;
     position: relative;
     overflow: hidden; /* Prevent scrollbars if the tomato overflows */
@@ -23,6 +24,10 @@ body {
     height: auto;
     position: relative;
     top: -80px; /* Adjust this value to move the tomato up */
+=======
+    background-color: #000; /* Black background */
+    position: relative; /* For proper positioning of children */
+>>>>>>> parent of 6dacb8e (added more apeal?)
 }
 
 .background-gif {
@@ -31,90 +36,63 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    opacity: 0.7;
 }
+
 
 .container {
     text-align: center;
+<<<<<<< HEAD
     margin-top: 50px;
     background-color: rgba(255, 255, 255, 0.85);
     padding: 30px;
     border-radius: 15px;
+=======
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+>>>>>>> parent of 6dacb8e (added more apeal?)
     position: relative;
-    z-index: 2;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    width: 90%;
+    z-index: 2; /* Ensure it's above the background */
 }
 
 #sessionTitle {
-    font-size: 28px;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: #2c3e50;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
 #timer {
-    font-size: 64px;
-    font-weight: 700;
-    margin: 30px 0;
-    color: #e74c3c;
+    font-size: 48px;
+    margin-top: 20px;
 }
 
 .button-container {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .button-container button {
-    font-size: 18px;
-    padding: 12px 25px;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 10px; /* Add margin for spacing between buttons */
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 50px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
 }
 
 .button-container button#startButton {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #007bff; /* Blue for work session */
+    color: #fff; /* White text */
 }
 
 .button-container button#resetButton {
-    background-color: #dc3545;
-    color: #fff;
-}
-
-.button-container button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.button-container button:active {
-    transform: translateY(0);
+    background-color: #dc3545; /* Red for reset button */
+    color: #fff; /* White text */
 }
 
 .button-container button#startButton.break-session {
-    background-color: #28a745;
+    background-color: #28a745; /* Green for break session */
 }
 
-@media (max-width: 480px) {
-    .container {
-        padding: 20px;
-    }
-    
-    #timer {
-        font-size: 48px;
-    }
-    
-    .button-container button {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
+.button-container button#resetButton.break-session {
+    background-color: #dc3545; /* Red for reset button */
 }
